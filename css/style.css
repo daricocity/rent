@@ -1263,6 +1263,12 @@ body {
   /*opacity: 0.2;*/
 }
 
+@media only screen and (max-width: 479px) {
+  .section-banner__title {
+    margin-top: 40px;
+  }
+}
+
 .section-banner__content {
   display: block;
   position: relative;
