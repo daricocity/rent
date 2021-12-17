@@ -696,6 +696,7 @@ body {
 .page-header {
   display: block;
   position: relative;
+  border-bottom: 1px solid #eee;
 }
 
 .page-header__scroll {
@@ -703,10 +704,12 @@ body {
 }
 
 .page-header__scroll.rent-active {
-  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);*/
   z-index: 5;
   background-color: #ffffff;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
 }
 
 .page-header__scroll.rent-active .page-header__inner {
@@ -855,7 +858,8 @@ body {
 }
 
 .page-footer__top {
-  padding: 100px 0 110px;
+  /*padding: 100px 0 110px;*/
+  padding: 50px 0 60px;
 }
 
 .page-footer__top .rent-h3 {
@@ -909,7 +913,8 @@ body {
 }
 
 .page-footer__bottom {
-  padding: 48px 0 41px;
+  /*padding: 48px 0 41px;*/
+  padding: 28px 0 21px;
   border-top: 1px solid #DDDDDD;
   color: #222222;
   text-align: center;
@@ -1194,6 +1199,24 @@ body {
   padding: 30px 0;
 }
 
+.card-with-icon:not(.card-with-icon-dark) {
+  background: #ffffff;
+}
+
+.card-with-icon-dark {
+  background: #2B5AE1;
+}
+
+.card-with-icon-dark .card-with-icon__icon i,
+.card-with-icon-dark .card-with-icon__title,
+.card-with-icon-dark .card-with-icon__text {
+  color: #ffffff;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .card-with-icon__box {
   display: block;
   position: relative;
@@ -1228,6 +1251,7 @@ body {
   position:relative;
   z-index:2;
   padding-bottom:10px;
+  color: #2B5AE1;
 }
 
 .card-with-icon__title {
@@ -1282,7 +1306,8 @@ body {
 
 .section-banner__title {
   margin-bottom: 8px;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
+  color: rgb(3, 13, 84);
   font-family: Nunito;
   font-size: 60px;
   font-weight: bold;
@@ -1500,7 +1525,8 @@ body {
 .form-search {
   display: inline-block;
   position: relative;
-  width: 100%;
+  /*width: 100%;*/
+  width: 90%;
   max-width: 766px;
   /*border: 8px solid rgba(255, 255, 255, 0.1);*/
   border: 6px solid rgba(3, 13, 84, 0.1);
@@ -1527,7 +1553,8 @@ body {
   -o-text-overflow: ellipsis;
   flex: 1;
   height: 54px;
-  padding-left: 65px;
+  /*padding-left: 65px;*/
+  padding-left: 35px;
   overflow: hidden;
   border: none;
   border-radius: 30px;
@@ -1698,6 +1725,7 @@ body {
 .section-steps {
   display: block;
   position: relative;
+  background: #FFFDF5;
 }
 
 .section-steps .rent-slider {
@@ -1840,9 +1868,11 @@ body {
 .rent-item__box:hover,
 .rent-item__box:focus,
 .rent-item__box:active {
-  -webkit-box-shadow: 0px 0px 50px rgba(18, 53, 87, 0.12);
+  /*-webkit-box-shadow: 0px 0px 50px rgba(18, 53, 87, 0.12);
+  box-shadow: 0px 0px 50px rgba(18, 53, 87, 0.12);*/
   background-color: #ffffff;
-  box-shadow: 0px 0px 50px rgba(18, 53, 87, 0.12);
+  -webkit-box-shadow: 0px 0px 50px rgba(9, 26, 43, 0.12);
+  box-shadow: 0px 0px 50px rgba(9, 26, 43, 0.12);
 }
 
 .rent-item__media {
@@ -1892,7 +1922,8 @@ body {
 .rent-item__title a:hover,
 .rent-item__title a:focus,
 .rent-item__title a:active {
-  color: #E63A28;
+  /*color: #E63A28;*/
+  color: #2B5AE1;
   text-decoration: none;
 }
 
@@ -1904,9 +1935,9 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.1;
+  /*line-height: 1.1;*/
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .rent-item__price {
@@ -1974,6 +2005,19 @@ body {
 .rent-item__user > span:first-of-type {
   margin-right: 8px;
   color: #2B5AE1;
+}
+
+.rent-item__location_star {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.rent-item__location_star .rent-item__stars {
+  margin-left: 5px;
+}
+
+.rent-item__location_star > span:first-of-type {
+  margin-right: 5px;
 }
 
 .rent-item__location {
@@ -3554,6 +3598,12 @@ body {
     /*padding-top: 120px;
     padding-bottom: 120px;*/
   }
+  .rent-item:nth-child(2) {
+    margin-top: 50px;
+  }
+  .rent-item:nth-child(3) {
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 1365px) {
@@ -3828,6 +3878,7 @@ body {
 
   .page-footer__top {
     padding: 40px 0;
+
   }
 
   .section-banner__bg {
