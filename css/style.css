@@ -351,6 +351,14 @@ body {
   transition: 0.5s;
 }
 
+#view-more {
+  margin-top: 20px; 
+  border-radius: 0; 
+  float: right; 
+  height: 40px; 
+  line-height: 25px;
+}
+
 .rent-button span {
   font-size: 13px;
 }
@@ -1217,6 +1225,10 @@ body {
   margin-bottom: 30px;
 }
 
+.pd-50 {
+  padding-bottom: 50px;
+}
+
 .card-with-icon__box {
   display: block;
   position: relative;
@@ -1287,7 +1299,7 @@ body {
   /*opacity: 0.2;*/
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 768px) {
   .section-banner__title {
     margin-top: 40px;
   }
@@ -1709,9 +1721,28 @@ body {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 1200px) {
   .popular-searches {
     display: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .section-banner__title, 
+  .section-banner__text, 
+  .section-banner__form {
+    text-align: center;
+  }
+  .msg-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .form-search__box .rent-button {
+    padding: 0 20px;
   }
 }
 
@@ -1725,7 +1756,8 @@ body {
 .section-steps {
   display: block;
   position: relative;
-  background: #FFFDF5;
+  /*background: #FFFDF5;*/
+  background-color: #F1FDFB;
 }
 
 .section-steps .rent-slider {
@@ -1768,6 +1800,10 @@ body {
 .section-category .section-content {
   display: block;
   position: relative;
+}
+
+.section-featured .section-content {
+  margin-top: 80px;
 }
 
 .section-category .section-content::before {
@@ -2032,20 +2068,22 @@ body {
 }
 
 .section-info {
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='1920' height='835' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 30h1920v805H0z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-17.702 631.926c77.988 49.78 199.673 83.93 412.929 53.245 162.928-23.443 250.723-86.396 413.992-95.3 193.671-10.562 311.221-17.259 513.021 35.146 351.9 91.385 575.28 51.984 656.62-28.782 147.25-146.227 87.8-3.348-27.86-190.134C1602.52-156.648 212.189-118.57-83.023 421.496c-94.743 173.326-93.17 109.268 65.32 210.43z' fill='%23FFFDF5'/%3E%3C/svg%3E");
+  /*-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='1920' height='835' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 30h1920v805H0z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-17.702 631.926c77.988 49.78 199.673 83.93 412.929 53.245 162.928-23.443 250.723-86.396 413.992-95.3 193.671-10.562 311.221-17.259 513.021 35.146 351.9 91.385 575.28 51.984 656.62-28.782 147.25-146.227 87.8-3.348-27.86-190.134C1602.52-156.648 212.189-118.57-83.023 421.496c-94.743 173.326-93.17 109.268 65.32 210.43z' fill='%23FFFDF5'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center top;
-  -webkit-mask-size: cover;
+  -webkit-mask-size: cover;*/
   background-color: #F1FDFB;
 }
 
 .section-info .section-content .rent-h3 {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
+  margin-bottom: 10px;
   color: #333333;
   font-size: 42px;
   font-style: normal;
   font-weight: bold;
-  line-height: 1.35;
+  /*line-height: 1.35;*/
+  line-height: 0.35;
 }
 
 .info-list {
@@ -2072,24 +2110,37 @@ body {
 
 .info-list-item__icon {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 89px;
-  flex: 0 0 89px;
+  /*-ms-flex: 0 0 89px;
+  flex: 0 0 89px;*/
+  -ms-flex: 0 0 39px;
+  flex: 0 0 39px;
   width: 89px;
   height: 89px;
+}
+
+.info-list-item__icon > .card-with-icon__icon i{
+  font-size: 15px;
 }
 
 .info-list-item__desc {
   display: block;
   position: relative;
-  margin-left: 28px;
+  /*margin-left: 28px;*/
+}
+
+.section-content ul li .info-list-item {
+  margin-bottom: -30px;
 }
 
 .info-list-item__title {
-  margin-bottom: 26px;
+  /*margin-bottom: 26px;*/
+  /*font-size: 24px;*/
+  margin-bottom: 10px;
   color: #333333;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 1.38;
+  /*line-height: 1.38;*/
+  line-height: 0.88;
 }
 
 .info-list-item__text {
@@ -2097,7 +2148,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.1;
+  line-height: 1.35;
 }
 
 .section-download {
