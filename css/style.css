@@ -359,6 +359,13 @@ body {
   line-height: 25px;
 }
 
+#info-list-item-view-more {
+  margin-top: 50px; 
+  border-radius: 0; 
+  height: 40px; 
+  line-height: 25px;
+}
+
 .rent-button span {
   font-size: 13px;
 }
@@ -604,10 +611,16 @@ body {
   transition: 0.5s;
 }
 
+#social li a {
+  border-radius: 0px;
+  border: 1px solid #2B5AE1;
+}
+
 .social li a:hover,
 .social li a:focus,
 .social li a:active {
-  background-color: #E63A28;
+  /*background-color: #E63A28;*/
+  background-color: #2B5AE1;
   color: #ffffff;
   text-decoration: none;
 }
@@ -2065,6 +2078,10 @@ body {
 .rent-item__location > span:first-of-type {
   margin-right: 8px;
   color: #2B5AE1;
+}
+
+#section-info {
+  background-color: #ffffff;
 }
 
 .section-info {
