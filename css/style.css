@@ -2171,10 +2171,11 @@ body {
 .section-download {
   display: block;
   position: relative;
-  background-image: url(../img/bg-download.jpg);
+  /*background-image: url(../img/bg-download.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background-color: #2B5AE1;
 }
 
 .section-download__box {
@@ -3931,6 +3932,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 638px) {
+  #view-more {
+    float: none;
+    margin-left: 37%;
+  }
+  #section-info-download .section-content .rent-item__body .rent-h3 {
+    margin-left: -15px;
+    font-size: 23px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .section-title {
     margin-bottom: 40px;
@@ -3951,7 +3963,7 @@ body {
 
   .section-banner__bg {
     /*padding: 85px 0;*/
-    padding: 5px 0;
+    padding: 5px 0 60px 0;
   }
 
   .section-banner.section-banner--custome .section-banner__bg {
@@ -4222,5 +4234,36 @@ body {
 .section-title-separator span i:nth-child(2) {
   font-size:18px;
   color: #2B5AE1;
+}
+
+#section-info-download {
+  background-color: #2B5AE1;
+}
+
+#section-info-download .section-content {
+  color: #fff;
+  line-height: 1.58;
+  display: block;
+  z-index: 2;
+  position: relative;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#section-info-download .section-content .rent-h3 {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.37;
+}
+
+@media only screen and (min-width: 992px) {
+  #section-info-download .section-banner__form {
+    margin-top: -50px;
+  }
 }
 
