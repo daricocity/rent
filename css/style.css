@@ -1926,6 +1926,7 @@ body {
 .list-inline-item {
   display: inline-block;
   opacity: .9;
+  overflow: hidden;
 }
 
 .list-inline-item:not(:last-child) {
@@ -1963,6 +1964,12 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(43, 15, 64, 0.08);
   -webkit-box-shadow: 0px 0px 5px rgba(43, 15, 64, 0.08);
+  /*transition: transform .5s ease;*/
+  transition: 0.5s all ease-in-out;
+}
+
+.mt-half2 ul li:hover img {
+  transform: scale(1.5);
 }
 
 .mr-4,
