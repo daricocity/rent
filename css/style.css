@@ -1985,8 +1985,8 @@ body {
 
 @media (max-width: 480px) {
   .mt-half2 {
-      margin-top: 20px;
-      margin-left: -20px;
+    margin-top: 20px;
+    margin-left: -20px;
   }
   .mt-half2 ul li img {
     width: 148px; 
