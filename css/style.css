@@ -1344,6 +1344,39 @@ body {
   }
 }
 
+@media (min-width: 500px) and (max-width: 999px){
+  .section-enterprise #enterprise-rent-grid {
+    width: 100%;
+    padding: 48px 24px; 
+    max-width: 900px; 
+    margin-left: 0px; 
+  }
+  .section-enterprise #enterprise-rent-grid .mt-half2 {
+    margin-left: -55px
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1099px){
+  .section-enterprise #enterprise-rent-grid {
+    width: 100%;
+    padding: 48px 24px; 
+    max-width: 1000px; 
+    margin-left: 0px; 
+  }
+  /*.section-enterprise #enterprise-rent-grid .mt-half2 {
+    margin-left: -55px
+  }*/
+}
+
+@media (min-width: 1100px) and (max-width: 1200px){
+  .section-enterprise #enterprise-rent-grid {
+    width: 100%;
+    padding: 48px 24px; 
+    max-width: 1200px; 
+    margin-left: 0px; 
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 845px){
   .card-with-icon-dark-testimonial {
     width: 320px;
