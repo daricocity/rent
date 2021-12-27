@@ -1500,6 +1500,8 @@ body {
 .section-banner__content {
   display: block;
   position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .section-banner__content.dark .section-banner__title,
@@ -1524,7 +1526,7 @@ body {
   color: #000;
   font-size: 18px;
   line-height: 1.2;
-
+  letter-spacing: 0.3px;
 }
 
 .section-banner__form {
