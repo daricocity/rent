@@ -2087,10 +2087,40 @@ body {
   align-items: center;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1250px) {
   .list-inline {
     /*padding: 0 62px;*/
-    padding: 0 52px 0 105px;
+    padding: 0 52px 0 120px;
+  }
+  #enterp .list-inline {
+    padding: 0 62px;
+  }
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1249px) {
+  .list-inline {
+    /*padding: 0 62px;*/
+    padding: 0 42px 0 60px;
+  }
+  #enterp .list-inline {
+    padding: 0 62px;
+  }
+}
+
+@media only screen and (min-width: 1160px) and (max-width: 1179px) {
+  .list-inline {
+    /*padding: 0 62px;*/
+    padding: 0 32px 0 50px;
+  }
+  #enterp .list-inline {
+    padding: 0 62px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1150px) {
+  .list-inline {
+    /*padding: 0 62px;*/
+    padding: 0 32px 0 50px;
   }
   #enterp .list-inline {
     padding: 0 62px;
