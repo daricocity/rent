@@ -1419,10 +1419,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 480px){
+  .card-with-icon-dark-testimonial {
+    padding-left: 30px;
+  }
+}
+
 .testimonial-info {
   position: relative;
   margin-top: -80px;
-  z-index: 10;
+  z-index: 4;
 }
 
 .testimonial-info img {
@@ -1450,10 +1456,10 @@ body {
 }
 
 .card-with-icon__icon-testimonial i{
-  font-size:54px;
-  position:relative;
-  z-index:2;
-  padding-bottom:10px;
+  font-size: 54px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 10px;
   /*color: #2B5AE1;*/
   color: #eee;
 }
